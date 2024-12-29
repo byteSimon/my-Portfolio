@@ -1,0 +1,193 @@
+.hero {
+  margin-top: 4rem;
+  margin-bottom: 25rem;
+  padding: 4rem 2.5rem;
+  @media (max-width: 980px) {
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+.copyWrapper {
+  position: relative;
+  z-index: 10;
+  width: fit-content;
+  margin: 4.8rem 0;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 900;
+  line-height: 1.1;
+  background: linear-gradient(-90deg, #a545ff, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  span {
+    color: var(--brand);
+  }
+
+  @media (max-width: 768px) {
+    font-size: var(--text-xl);
+  }
+}
+
+.textWrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--brand);
+  transform-origin: 0 50%;
+  top: 0;
+}
+
+.letters {
+  display: inline-block;
+  line-height: 1em;
+  position: relative;
+  padding-right: 10px;
+  white-space: pre; // Preserve spaces between words
+  
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+}
+
+.subTitle {
+  font-size: var(--text-lg);
+  line-height: 1.1;
+  margin-top: 1.6rem;
+  font-weight: 200;
+
+  span {
+    font-weight: bold;
+    color: var(--brand);
+  }
+}
+
+.aboutCopy {
+  margin: 1.4rem 0;
+  max-width: 700px;
+  font-weight: 500;
+}
+
+.yellowtext {
+  background: linear-gradient(90deg, #fceabb, #c29e3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.wait {
+  font-size: 3rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#5d5b5a, #e2dce4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile {
+  margin: 2rem;
+  z-index: 10;
+  position: relative;
+  margin-right: 9rem;
+  border-radius: 50%;
+  outline: solid;
+  outline-width: 3px;
+  outline-color: var(--brand);
+  outline-offset: 6px;
+  transition: 0.4s;
+
+  &:hover {
+    outline: dotted;
+    outline-color: var(--brand);
+    outline-offset: 10px;
+    transform: scale(105%);
+  }
+}
+
+.heroGrid {
+  gap: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 980px) {
+    flex-direction: column-reverse;
+    align-items: start;
+    flex-wrap: wrap;
+
+    .profile {
+      height: 150px;
+      width: 150px;
+      margin-right: 0;
+      margin-bottom: -30px;
+      margin-top: 3rem;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+// connectbutton
+.connetbtn {
+  // padding: 10px;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #3c004c, #9d0abe, #b309b3);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.connetbtn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.textone {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.texttwo {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.connetbtn:hover .textone {
+  top: -100%;
+}
+
+.connetbtn:hover .texttwo {
+  top: 50%;
+}

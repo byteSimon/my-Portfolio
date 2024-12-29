@@ -1,0 +1,103 @@
+.sideBar {
+  background: var(--background-dark);
+
+  height: 100vh;
+
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  a {
+    height: 100px;
+
+    flex-shrink: 0;
+
+    writing-mode: vertical-lr;
+    font-size: var(--text-sm);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+
+    border-right: 1px solid transparent;
+
+    transition: 0.1s all;
+    width: 100%;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      animation: linkHover 3s infinite; // Apply animation on hover
+    }
+  }
+
+  // Keyframes for the hover effect
+  @keyframes linkHover {
+    0% {
+      color: #f9ce34; // First color
+    }
+    33% {
+      color: #ee2a7b; // Second color
+    }
+    66% {
+      color: #6228d7; // Third color
+    }
+    100% {
+      color: #f9ce34; // Loop back to the first color
+    }
+  }
+
+  a:hover {
+    background: var(--background);
+    border-right: 1px solid var(--brand);
+    opacity: 1;
+  }
+
+  .selected {
+    background: var(--background);
+    border-right: 1px solid var(--brand);
+    opacity: 1;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  flex-shrink: 0;
+
+  font-size: var(--text-sm);
+  font-weight: 800;
+  line-height: 1;
+
+  width: 54px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--background);
+  border-radius: 4px;
+
+  margin: 1.8rem 0;
+
+  span {
+    font-size: var(--text-md);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--brand);
+  }
+}
+
+.sideBar::-webkit-scrollbar {
+  display: none;
+}

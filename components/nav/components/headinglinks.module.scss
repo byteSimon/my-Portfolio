@@ -1,0 +1,48 @@
+.links {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 10px;
+
+  a {
+    opacity: 0.5;
+    position: relative;
+    z-index: 20;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+}
+
+
+.linkedin:hover {
+  color: #0077b5; 
+}
+
+.youtube:hover {
+  color: #ee2e2e;
+}
+
+.instagram {
+  transition: color 0.3s ease;
+
+  &:hover {
+    animation: instagramHover 3s infinite; // Apply animation on hover
+  }
+}
+
+// Keyframes for the hover effect
+@keyframes instagramHover {
+  0% {
+    color: #f9ce34; // First color
+  }
+  33% {
+    color: #ee2a7b; // Second color
+  }
+  66% {
+    color: #6228d7; // Third color
+  }
+  100% {
+    color: #f9ce34; // Loop back to the first color
+  }
+}

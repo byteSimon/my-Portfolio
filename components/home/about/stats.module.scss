@@ -1,0 +1,55 @@
+.stats {
+  position: relative;
+}
+
+.statColumn {
+  h4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    
+    span {
+      font-size: var(--text-md);
+      font-weight: bold;
+      position: relative;
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.statGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem !important;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    .chipIcon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.chipIcon {
+  font-size: 1.4em !important;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.chipText {
+  font-size: 0.9em;
+  font-weight: 500;
+}
