@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SideBar } from "../nav/SideBar";
-// import { Hero } from "./hero/Hero";
+import { Hero } from "./hero/Hero";
 import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
 import { About } from "./about/About";
@@ -32,7 +32,7 @@ export const Home = () => {
         <main id="main">
           <Stars />
           <Heading />
-          {/* <Hero /> */}
+          <Hero />
           <About />
           <Projects />
           <Experience />
