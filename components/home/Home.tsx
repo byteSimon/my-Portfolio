@@ -32,7 +32,7 @@ export const Home = () => {
         <main id="main">
           <Stars />
           <Heading />
-          <Hero />
+          {/* <Hero /> */}
           <About />
           <Projects />
           <Experience />
