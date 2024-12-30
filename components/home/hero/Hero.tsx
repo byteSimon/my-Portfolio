@@ -1,37 +1,35 @@
-import { useAnimation } from "framer-motion";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import { useEffect } from "react";
 
 export const Hero = () => {
-  const textControls = useAnimation();
+  // const textControls = useAnimation();
 
-  useEffect(() => {
-    const animateText = async () => {
-      while (true) {
-        await textControls.start({
-          width: "100%",
-          transition: {
-            duration: 2,
-            ease: "linear",
-          },
-        });
+  // useEffect(() => {
+  //   const animateText = async () => {
+  //     while (true) {
+  //       await textControls.start({
+  //         width: "100%",
+  //         transition: {
+  //           duration: 2,
+  //           ease: "linear",
+  //         },
+  //       });
 
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+  //       await new Promise((resolve) => setTimeout(resolve, 1500));
 
-        await textControls.start({
-          width: "0%",
-          transition: {
-            duration: 1.5,
-            ease: "linear",
-          },
-        });
-      }
-    };
+  //       await textControls.start({
+  //         width: "0%",
+  //         transition: {
+  //           duration: 1.5,
+  //           ease: "linear",
+  //         },
+  //       });
+  //     }
+  //   };
 
-    animateText();
-  }, [textControls]);
+  //   animateText();
+  // }, [textControls]);
 
   return (
     <section className={`section-wrapper ${styles.hero}`}>
