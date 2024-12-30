@@ -1,4 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
