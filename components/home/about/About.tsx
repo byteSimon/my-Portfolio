@@ -13,7 +13,7 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Howdy! I&apos;m Swatantra Mitra aka. Swagy and I&apos;m a graduate
+              Howdy! I&apos;m Swatantra Mitra aka. DiFF and I&apos;m a graduate
               in{" "}
               <span className={styles.yellowText}>
                 Electronics and Communication Engineering

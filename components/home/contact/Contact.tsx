@@ -39,7 +39,7 @@ export const Contact = () => {
         </div>
       </section>
       <footer className={styles.footerSection}>
-        <div className="copyright">Made with Swagy ❤️</div>
+        <div className="copyright">Made with DiFF ❤️</div>
         <div className="copyright">
           &copy; {new Date().getFullYear()} Swatantra Mitra. All rights
           reserved.

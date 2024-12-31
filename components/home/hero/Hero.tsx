@@ -3,33 +3,6 @@ import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
 
 export const Hero = () => {
-  // const textControls = useAnimation();
-
-  // useEffect(() => {
-  //   const animateText = async () => {
-  //     while (true) {
-  //       await textControls.start({
-  //         width: "100%",
-  //         transition: {
-  //           duration: 2,
-  //           ease: "linear",
-  //         },
-  //       });
-
-  //       await new Promise((resolve) => setTimeout(resolve, 1500));
-
-  //       await textControls.start({
-  //         width: "0%",
-  //         transition: {
-  //           duration: 1.5,
-  //           ease: "linear",
-  //         },
-  //       });
-  //     }
-  //   };
-
-  //   animateText();
-  // }, [textControls]);
 
   return (
     <section className={`section-wrapper ${styles.hero}`}>
@@ -37,7 +10,7 @@ export const Hero = () => {
         <div className={styles.copyWrapper}>
           <Reveal>
             <h1 className={styles.title}>
-              Hi, I&apos;m SwaGy<span>.</span>
+              Hi, It&apos;s DiFF<span>.</span>
             </h1>
           </Reveal>
           <Reveal>
