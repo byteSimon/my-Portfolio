@@ -26,7 +26,7 @@ export const Project = ({
   code,
   tech,
 }: Props) => {
-  
+
   // const [hovered, setHovered] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -57,8 +57,6 @@ export const Project = ({
         transition={{ duration: 0.75 }}
       >
         <div
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
