@@ -5,6 +5,7 @@ import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
+// import Image from "next/image";
 
 interface Props {
   modalContent: JSX.Element;
@@ -60,25 +61,21 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
-          {/* <Image
-            priority
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            width={1000}
-            height={0}
-            style={{
-              width: hovered ? "90% !important" : "85% !important",
-              rotate: hovered ? "2deg" : "0deg",
-            }}
-          /> */}
-          <img
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            style={{
-              width: hovered ? "90%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
-            }}
-          />
+          <div className={styles.cardContainer}>
+            <div className={styles.card}>
+              <div className={styles.imgContent}>
+                <img
+                  src={imgSrc}
+                  alt={`An image of the ${title} project.`}
+                  className={styles.projectImg}
+                />
+              </div>
+              <div className={styles.content}>
+                <h3 className={styles.heading}>{title}</h3>
+                <p>{description}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className={styles.projectCopy}>
           <Reveal width="100%">

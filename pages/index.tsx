@@ -34,7 +34,7 @@ export default function home() {
         />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@swagy_devz" />
+        <meta name="twitter:site" content="@diff_devz" />
         <meta
           name="twitter:title"
           content="Swatantra Mitra | Software Engineer"
