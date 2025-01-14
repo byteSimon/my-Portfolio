@@ -26,7 +26,8 @@ export const Project = ({
   code,
   tech,
 }: Props) => {
-  const [hovered, setHovered] = useState(false);
+  
+  // const [hovered, setHovered] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
 
