@@ -20,7 +20,15 @@ const experience = [
     location: "Hydrabad",
     description:
       "Responsible for developing and building functional, low-level and dynamic Embedded System Software for Deffense organization. Coordinated with hardware team for test & bug fixes, features and code refactoring.",
-    tech: [".Net ", "C#", "C++", "QT", "Embedded C", "Arduino", "Microcontroller"],
+    tech: [
+      ".Net ",
+      "C#",
+      "C++",
+      "QT",
+      "Embedded C",
+      "Arduino",
+      "Microcontroller",
+    ],
   },
   {
     title: "Semicolon ITES.",
@@ -28,7 +36,7 @@ const experience = [
     time: "November 2024 - Present",
     location: "Durgapur, West-Bengal",
     description:
-      "Developed new user-facing features using React.js, which improved application performance by 25% and facilitated an engaging user experience. Also created and integrate RESTful APIs into the React application.",
-    tech: ["JavaScript", "NextJs", "ReactJs", "Git"],
+      "Designed and Developed and deployed high-performance company website with new user-facing features using Next JS, React.js and some custom code which improved application performance by 75% and facilitated an engaging user experience mainly focused on UI/UX. Also created and integrate RESTful APIs into the React application.",
+    tech: ["JavaScript", "NextJs", "ReactJs", "Git", "Tailwind"],
   },
 ];
