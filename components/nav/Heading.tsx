@@ -30,7 +30,7 @@ export const Heading = () => {
       <MyLinks />
       <button
         className={styles.glowButton}
-        onClick={() => window.open("/Swatantra_Mitra_JSE.pdf")}
+        onClick={() => window.open("/Swatantra_Mitra_SDE.pdf")}
       >
         <div className={styles.buttonContent}>
           <span className={styles.cv}>CV</span>

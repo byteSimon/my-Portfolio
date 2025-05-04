@@ -18,7 +18,7 @@ export const Contact = () => {
               Have an idea to discuss? Shoot me an email if you want to connect!
               You can also find me on{" "}
               <Link
-                href="https://www.linkedin.com/in/swaggy007/"
+                href="https://www.linkedin.com/in/bytesimon/"
                 target="_blank"
                 rel="nofollow"
                 style={{ fontWeight: "bold", fontSize: "3rem" }}
@@ -39,7 +39,7 @@ export const Contact = () => {
         </div>
       </section>
       <footer className={styles.footerSection}>
-        <div className="copyright">Made with DiFF ❤️</div>
+        <div className="copyright">Made with Simon ❤️</div>
         <div className="copyright">
           &copy; {new Date().getFullYear()} Swatantra Mitra. All rights
           reserved.
